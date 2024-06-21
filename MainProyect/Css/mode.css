@@ -1,0 +1,31 @@
+#button{
+    height: 40px;
+    width: 100px;
+    border-radius: 50px;
+    position: relative;
+    z-index: 10;
+    border-style: none;
+  }
+  
+  #sun{
+    color: yellow;
+    font-size: 30px;
+    position: absolute;
+    z-index: 100;
+    top: 5px;
+    left:10px;
+    border-radius: 100%;
+    transition: all 1s ease-in-out;
+  }
+  
+  #mooon{
+    background-color: none;
+    opacity: 0;
+    font-size: 30px;
+    position: absolute;
+    z-index: 50;
+    color: white;
+    top: 5px;
+    left: 10px;
+    transition: all 1s ease-in-out;
+  }
