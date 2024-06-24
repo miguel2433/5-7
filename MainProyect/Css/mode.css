@@ -4,18 +4,18 @@
     border-radius: 50px;
     position: relative;
     z-index: 10;
-    border-style: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
   }
   
   #sun{
-    color: yellow;
+    color: #ffe75d;
     font-size: 30px;
     position: absolute;
     z-index: 100;
-    top: 5px;
-    left:10px;
-    border-radius: 100%;
-    transition: all 1s ease-in-out;
+    left: 5px;
+    transition: all .7s ease-in-out;
   }
   
   #mooon{
@@ -25,7 +25,7 @@
     position: absolute;
     z-index: 50;
     color: white;
-    top: 5px;
-    left: 10px;
-    transition: all 1s ease-in-out;
+    left: 5px;
+    transition: all .7s ease-in-out;
+
   }

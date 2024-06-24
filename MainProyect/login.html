@@ -6,27 +6,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="./Css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Css/estilos.css">
     <link rel="stylesheet" href="./Css/mode.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-          darkMode: 'selector',
-          theme: {
-            extend: {
-              colors: {
-                negro: "#333548",
-                darkLigt: "56586B",
-                darkGrow: "424457",
-                white: "#FFFF"
-              }
-            }
-          }
-        }
-      </script>
 </head>
-<body class="bg-white dark:bg-negro">
+<body class="bg-white dark:bg-negro duration-500 truncate">
     <div class="w-[100%] flex justify-end">
-        <div class= "mt-2 mr-4 dark:bg-negro" id="button">
+        <div class= "mt-2 mr-4 border-solid border-2 border-gris dark:bg-negrito dark:border-none" id="button">
             <i class="fa-sharp fa-solid fa-sun" id="sun"></i></span>
             <i class="fa-solid fa-moon" id="mooon"></i></span>
         </div>
@@ -35,45 +20,22 @@
         <article class="w-[70%] h-[auto] text-center">
             <h1 class="text-green text-4xl font-bold">Registrarse</h1>
             <h3 class="text-2xl mt-8 dark:text-white" >Ingresa tus datos para crear tu cuenta</h3>
-            <div id="content-form" class="w-[100%] flex justify-center items-center">
+            <div id="content-form" class="w-auto flex justify-center items-center">
                 <form id="formulario" class="mt-8 w-[60%]">
                     <label  for="Nombre"></label>
-                    <input  class="w-52 border-b-2 mr-8 focus:outline-none  dark:bg-negro dark:text-white" type="text" name="Nombre" id="input Nombre" placeholder="Nombre" required>
+                    <input  class="w-52 border-b-2 mr-8 outline-none duration-500 dark:bg-negro dark:text-white" type="text" name="Nombre" id="input Nombre" placeholder="Nombre" required>
                     
                     <label for="Apellido"></label>
-                    <input class="w-52 border-b-2 focus:outline-none  dark:text-white dark:bg-negro" type="text" name="Apellido" id="input Apellido" placeholder="Apellido" required>
-                    <br>
-                    <label for="Pais"></label>
-                    <input class="w-52 border-b-2 mr-8 mt-6 focus:outline-none  dark:text-white dark:bg-negro" type="text" name="Pais" id="input Pais" placeholder="Pais" required>
-                    
-                    <label for="Ciudad"></label>
-                    <input class="w-52 border-b-2 focus:outline-none  dark:text-white dark:bg-negro" type="text" name="Ciudad" id="input Ciudad" placeholder="Ciudad" required>
-                    <br>
-                    <label for="Localidad"></label>
-                    <input class="w-52 border-b-2 mr-8 mt-6 focus:outline-none   dark:text-white dark:bg-negro" type="text" name="Localidad" id="input Localidad" placeholder="Localidad" required>
-
-                    <label for="Area"></label>
-                    <input class="w-52 border-b-2 focus:outline-none   dark:text-white dark:bg-negro" type=" text" name="Area" id="input Area" placeholder="Codigo de area" required>
+                    <input class="w-52 border-b-2 outline-none duration-500 dark:text-white dark:bg-negro" type="text" name="Apellido" id="input Apellido" placeholder="Apellido" required>
                     <br>
 
                     <label for="Email"></label>
-                    <input class="w-52 border-b-2 mt-6 w-[80%] focus:outline-none   dark:text-white dark:bg-negro" type="email" name="Email" id="input Email" placeholder="Email" required>
+                    <input class="border-b-2 mt-6 min-w-[67%] outline-none duration-500  dark:text-white dark:bg-negro" type="email" name="Email" id="input Email" placeholder="Email" required>
                     <br>
-
-                    <label for="Telefono"></label>
-                    <input class="w-52 border-b-2 mt-6 w-[80%] focus:outline-none  dark:text-white dark:bg-negro" type="tel" name="Telefono" id="input Telefono" placeholder="Numero de telefono(Opcional)">
-                    <br>
-                    
-                    <label for="Contraseña"></label>
-                    <input class="w-52 border-b-2 mr-8 mt-6 focus:outline-none  dark:text-white dark:bg-negro" type="password" name="Contraseña" id="input Contraseña" placeholder="Contraseña" required>
-                    
-                    <label for="Conrepetir"></label>
-                    <input class="w-52 border-b-2 focus:outline-none  dark:text-white dark:bg-negro" type="password" name="Conrepetir" id="input Conrepetir" placeholder="Repetir Contraseña" required>
-                    <br>
-                    <input class="mt-8 bg-green rounded-3xl w-[55%] h-12 text-white text-2xl " type="submit" value="Registrarme">
+                    <input class="cursor-pointer mt-8 bg-green rounded-3xl w-[55%] h-12 text-white text-2xl hover:bg-verde" type="submit" value="Registrarme">
                 </form>
             </div>
-            <h3 class="mt-6 dark:text-white">¿Tienes una cuenta? <a class="text-green" href="">Inicia sesion</a></h3>
+            <h3 class="mt-6 dark:text-white duration-500 ">¿Tienes una cuenta? <a class="text-green" href="">Inicia sesion</a></h3>
         </article>
     </section>
     <script src="./Js/login.js"></script>
