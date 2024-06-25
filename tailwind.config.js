@@ -13,7 +13,7 @@ module.exports = {
         darkGrow: "424457",
         gris: "#D4D4D4",
         negrito: "#1A1520",
-        verde: "##668d76"
+        verde: "#668d76"
       }
     },
   },
