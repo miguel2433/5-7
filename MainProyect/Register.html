@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./Css/estilos.css">
     <link rel="stylesheet" href="./Css/mode.css">
 </head>
-<body class="bg-white dark:bg-negro duration-500 truncate">
+<body class="truncate dark:bg-negro">
     <div class="w-[100%] flex justify-end">
         <div class= "mt-2 mr-4 border-solid border-2 border-gris duration-500 dark:bg-negrito dark:border-none" id="button">
             <i class="fa-sharp fa-solid fa-sun" id="sun"></i></span>
@@ -16,25 +16,22 @@
         </div>
     </div>
     <section class="w-[100%] h-screen flex justify-center items-center">
-        <article class="w-[70%] h-[auto] text-center mb-16">
-            <h1 class="text-green text-4xl font-bold">Registrarse</h1>
-            <h3 class="text-gris text-3xl mt-8 dark:text-white" >Ingresa tus datos para crear tu cuenta</h3>
-            <div id="content-form" class="w-auto flex justify-center items-center">
-                <form id="formulario" class="mt-8 w-[60%]">
-                    <label  for="Nombre"></label>
-                    <input  class="w-52 border-b-2 mr-8 outline-none duration-500 dark:bg-negro dark:text-white" type="text" name="Nombre" id="input Nombre" placeholder="Nombre" required>
-                    
-                    <label for="Apellido"></label>
-                    <input class="w-52 border-b-2 outline-none duration-500 dark:text-white dark:bg-negro" type="text" name="Apellido" id="input Apellido" placeholder="Apellido" required>
-                    <br>
-
-                    <label for="Email"></label>
-                    <input class="border-b-2 mt-6 min-w-[80%] outline-none duration-500  dark:text-white dark:bg-negro" type="email" name="Email" id="input Email" placeholder="Email" required>
-                    <br>
-                    <button class="mt-10 items-center text-2xl font-awesome mt-4 rounded-3xl h-10 w-[80%] bg-green text-white duration-300 hover:scale-110">Registrame</button>
-                </form>
+        <article class="text-center w-auto mb-24">
+            <h1 class="text-green font-medium text-4xl">Registrarse</h1>
+            <h3 class="text-3xl text-gris mt-2 dark:text-white" >Ingresa tus datos para crear tu cuenta</h3>
+            <form id="formulario">
+                <label for="Email"></label>
+                <input class="mt-8 w-[91%] outline-none border-b-2 dark:bg-negro dark:text-white" type="email" name="Email" placeholder="Email" required>
+                <br>
+                <label for="Nombre"></label>
+                <input class="w-52 outline-none border-b-2 mr-8 dark:bg-negro dark:text-white" type="password" name="Contraseña" placeholder="Nombre">
+                <label for="Apellido"></label>
+                <input class="mb-10 mt-6 w-52 outline-none border-b-2 dark:bg-negro dark:text-white" type="password" name="RepCon" placeholder="Apellido">
+                <br>
+            </form>
+            <button class="mt-18 items-center text-2xl font-awesome mt-4 rounded-3xl h-10 w-96 bg-green text-white duration-300 hover:scale-110">Registrame</button>
             </div>
-            <h3 class="mt-6 dark:text-white duration-500 ">¿Tienes una cuenta? <a class="text-green hover:text-verde" href="">Inicia sesion</a></h3>
+            <h3 class="mt-6 dark:text-white duration-300 ">¿Tienes una cuenta? <a href="Login.html" class="text-green hover:text-verde" href="">Inicia sesion</a></h3>
         </article>
     </section>
     <script src="./Js/login.js"></script>
