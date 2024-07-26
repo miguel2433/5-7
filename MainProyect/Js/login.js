@@ -2,7 +2,7 @@
   export function cargarClick(){
     const sol = document.getElementById('sun');
     const luna = document.getElementById('mooon');
-    console.log(sol);
+    /* console.log(sol); */
     let mov_realizado = true;
     
     function movimiento() {
