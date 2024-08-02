@@ -9,7 +9,7 @@
       sol.style.transform = 'translate(60px) rotate(180deg)';
       sol.style.opacity = '0';
       luna.style.opacity = '1';
-      luna.style.transform = 'translate(60px) rotate(200deg)';
+      luna.style.transform = 'translate(60px) rotate(320deg)';
       mov_realizado = false;
     }
     

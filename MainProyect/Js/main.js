@@ -3,6 +3,7 @@ import { crearToggle } from './toggle.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     const HEADER = document.getElementById('header');
+    const PRODUCTOS = document.querySelectorAll('.producto');
     
 /*  function crearNav(){ */
     fetch('./layout/Navbar.html')  // Ajusta la ruta según la estructura de tus directorios
@@ -14,5 +15,15 @@ document.addEventListener('DOMContentLoaded', () => {
         cargarClick();  // Llama a cargarClick después de que se haya asignado el HTML
     })
 /* } */
+    fetch('./layout/producto.html')
+    .then(response => response.text())
+    .then(html => {
+        PRODUCTOS.forEach(element => {
+            element.innerHTML = html;
+        }); 
+    })
+    .catch(error => {
+        console.error('There was a problem with the fetch operation:', error);
+    });
     
 });
