@@ -4,6 +4,7 @@ import { crearToggle } from './toggle.js';
 document.addEventListener('DOMContentLoaded', () => {
     const HEADER = document.getElementById('header');
     const PRODUCTOS = document.querySelectorAll('.producto');
+    const ASIDE = document.getElementById('aside')
     
 /*  function crearNav(){ */
     fetch('./layout/Navbar.html')  // Ajusta la ruta según la estructura de tus directorios
@@ -21,6 +22,15 @@ document.addEventListener('DOMContentLoaded', () => {
         PRODUCTOS.forEach(element => {
             element.innerHTML = html;
         }); 
+    })
+    .catch(error => {
+        console.error('There was a problem with the fetch operation:', error);
+    });
+    
+    fetch('./layout/Aside.html')
+    .then(response => response.text())
+    .then(html => {
+        ASIDE.innerHTML = html;
     })
     .catch(error => {
         console.error('There was a problem with the fetch operation:', error);
