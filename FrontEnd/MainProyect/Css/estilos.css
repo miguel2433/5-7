@@ -554,24 +554,16 @@ video {
   --tw-contain-style:  ;
 }
 
-.col-span-3 {
-  grid-column: span 3 / span 3;
-}
-
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
 
-.row-span-2 {
-  grid-row: span 2 / span 2;
-}
-
-.row-span-3 {
-  grid-row: span 3 / span 3;
-}
-
 .m-3 {
   margin: 0.75rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
 }
 
 .mb-10 {
@@ -626,18 +618,6 @@ video {
   margin-top: 2rem;
 }
 
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
-.mb-1 {
-  margin-bottom: 0.25rem;
-}
-
-.ml-1 {
-  margin-left: 0.25rem;
-}
-
 .flex {
   display: flex;
 }
@@ -670,6 +650,10 @@ video {
   height: 14rem;
 }
 
+.h-6 {
+  height: 1.5rem;
+}
+
 .h-8 {
   height: 2rem;
 }
@@ -686,20 +670,8 @@ video {
   height: 100vh;
 }
 
-.h-5 {
-  height: 1.25rem;
-}
-
-.h-6 {
-  height: 1.5rem;
-}
-
-.h-4 {
-  height: 1rem;
-}
-
-.w-1\/6 {
-  width: 16.666667%;
+.w-10 {
+  width: 2.5rem;
 }
 
 .w-24 {
@@ -754,40 +726,8 @@ video {
   width: 100%;
 }
 
-.w-5 {
-  width: 1.25rem;
-}
-
-.w-4 {
-  width: 1rem;
-}
-
 .cursor-pointer {
   cursor: pointer;
-}
-
-.grid-cols-\[200px_1fr\] {
-  grid-template-columns: 200px 1fr;
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-cols-\[\] {
-  grid-template-columns: ;
-}
-
-.grid-cols-\[500px_1fr\] {
-  grid-template-columns: 500px 1fr;
-}
-
-.grid-cols-\[1000px_1fr\] {
-  grid-template-columns: 1000px 1fr;
-}
-
-.grid-cols-\[100px_1fr\] {
-  grid-template-columns: 100px 1fr;
 }
 
 .grid-cols-\[300px_1fr\] {
@@ -796,26 +736,6 @@ video {
 
 .grid-rows-\[auto_1fr\] {
   grid-template-rows: auto 1fr;
-}
-
-.grid-rows-2 {
-  grid-template-rows: repeat(2, minmax(0, 1fr));
-}
-
-.grid-rows-\[\] {
-  grid-template-rows: ;
-}
-
-.grid-rows-\[auto_\] {
-  grid-template-rows: auto;
-}
-
-.grid-rows-\[full_1fr\] {
-  grid-template-rows: full 1fr;
-}
-
-.grid-rows-\[a\] {
-  grid-template-rows: a;
 }
 
 .flex-row {
@@ -914,26 +834,6 @@ video {
 
 .bg-white {
   background-color: #FFFF;
-}
-
-.fill-red-400 {
-  fill: #f87171;
-}
-
-.fill-current {
-  fill: currentColor;
-}
-
-.fill-gray-900 {
-  fill: #111827;
-}
-
-.fill-red-900 {
-  fill: #7f1d1d;
-}
-
-.fill-green {
-  fill: #6C987E;
 }
 
 .p-2 {

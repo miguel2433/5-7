@@ -1,7 +1,7 @@
 export async function crearToggle(page) {
     try {
         const response = await fetch(page == 'prueba'
-            ?'./layout/darkmode.html':'./Js/layout/darkmode.html'); // Ajusta la ruta según la estructura de tus directorios
+            ?'./layout/darkmode.html':'./layout/darkmode.html'); // Ajusta la ruta según la estructura de tus directorios
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
