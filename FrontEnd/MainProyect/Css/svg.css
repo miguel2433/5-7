@@ -5,4 +5,6 @@
   }
   .cls-1:hover{
     fill: #668D76;
+    cursor: pointer;
+    stroke:#668D76
   }
