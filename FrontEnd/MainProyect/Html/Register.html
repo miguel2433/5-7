@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../Css/estilos.css">
+    <link rel="stylesheet" href="../Css/mode.css">
+</head>
+<body class="truncate dark:bg-negro grid grid-cols-1 grid-rows-[auto_1fr]">
+    <!-- En el header de register no habra el icono de usuario -->
+    <header>
+        <nav class="border-b-gris border-b-2 h-auto dark:bg-negro text-grisLetra flex dark:border-b-white dark:border-b-2">
+            <div class="h-16 w-3/6 flex items-center">
+                <form action="/search">
+                    <input class="w-25 border-2 border-gris rounded-full h-8 m-3 outline-none p-2 dark:border-none dark:bg-negrito" type="text" name="query" placeholder="Buscar...">
+                </form>
+                <span class="justify-center w-24 ml-8 font-medium text-lg h-full items-center flex duration-300 hover:text-verdeLetra hover:cursor-pointer hover:bg-verdeClaro hover:border-b-4 hover:border-verdeLetra">En venta</span>
+                <span class="justify-center w-24 font-medium text-lg h-full items-center flex duration-300 hover:text-verdeLetra hover:cursor-pointer hover:bg-verdeClaro hover:border-b-4 hover:border-verdeLetra">Tradeo</span>
+                <span class="justify-center w-24 font-medium text-lg h-full items-center flex duration-300 hover:text-verdeLetra hover:cursor-pointer hover:bg-verdeClaro hover:border-b-4 hover:border-verdeLetra">Inventario</span>
+            </div>
+            <div class="w-3/6 flex justify-end items-center" id="toggle">
+                <div class="mt-2 mr-4 border-solid border-2 border-gris duration-300 dark:bg-negrito dark:border-none" id="button">
+                    <img id="sun" class='h-8 w-8' src="../Imagenens/Imagenes-funcionales/sol.svg" alt="">
+                    <img id="mooon" class="h-8 w-6" src="../Imagenens/Imagenes-funcionales/luna.svg" alt="">
+                </div>            
+            </div>
+        </nav>
+    </header>
+    <section class="w-[100%] h-screen flex justify-center items-center">
+        <article class="text-center w-auto mb-24">
+            <h1 class="text-green font-medium text-4xl">Registrarse</h1>
+            <h3 class="text-3xl text-gris mt-2 dark:text-white" >Ingresa tus datos para crear tu cuenta</h3>
+            <!-- Todos los input -->
+            <form method="post">
+                <label for="name"></label>
+                <input class="w-52 outline-none border-b-2 mr-8 dark:bg-negro dark:text-white" type="text" name="name" placeholder="Nombre" required>
+
+                <label for="last_name"></label>
+                <input class="mt-6 w-52 outline-none border-b-2 dark:bg-negro dark:text-white" type="text" name="last_name" placeholder="Apellido" required>
+                <br>
+                <label for="email"></label>
+                <input class="mt-4 w-[91%] outline-none border-b-2 dark:bg-negro dark:text-white" type="email" name="email" placeholder="Email" required>
+                <br>
+                <label for="password"></label>
+                <input class="mr-8 mt-4 w-52 outline-none border-b-2 dark:bg-negro dark:text-white" type="passwrod" name="password" placeholder="Contraseña" required>
+                
+                <label for="password2"></label>
+                <input class="mt-4 w-52 outline-none border-b-2 dark:bg-negro dark:text-white" type="passwrod" name="password2" placeholder="Repita su contraseña" required>
+                <br>
+                <label for="edad"></label>
+                <input class="mt-4 w-[91%] outline-none border-b-2 dark:bg-negro dark:text-white" type="text" name="edad" placeholder="Edad" required>
+                <br>
+                <button class="mt-8 items-center text-2xl font-awesome mt-4 rounded-3xl h-10 w-96 bg-green text-white duration-300 hover:scale-110">Registrame</button>
+            </form>
+            </div>
+            <h3 class="mt-6 dark:text-white duration-300 ">¿Tienes una cuenta? <a href="login.html" class="text-green hover:text-verde">Inicia sesion</a></h3>
+        </article>
+    </section>
+    <script src="../Js/login.js"></script>
+</body>
+</html> 

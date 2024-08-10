@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/estilos.css">
+    <link rel="stylesheet" href="../Css/mode.css">
+    <link rel="stylesheet" href="../Css/svg.css">
+    <title>Document</title>
+    <!-- Para poner iconos -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="dark:bg-negro h-screen w-full grid grid-cols-[300px_1fr] grid-rows-[auto_1fr]">
+    <!-- En este header si va a estar el icono del usuario -->
+    <header class="h-auto col-span-2" id="header">
+        <nav class="border-b-gris border-b-2 h-auto dark:bg-negro text-grisLetra flex dark:border-b-white dark:border-b-2">
+            <div class="h-16 w-3/6 flex items-center">
+                <form action="/search">
+                    <input class="w-25 border-2 border-gris rounded-full h-8 m-3 outline-none p-2 dark:border-none dark:bg-negrito" type="text" name="query" placeholder="Buscar...">
+                </form>
+                <span class="justify-center w-24 ml-8 font-medium text-lg h-full items-center flex duration-300 hover:text-verdeLetra hover:cursor-pointer hover:bg-verdeClaro hover:border-b-4 hover:border-verdeLetra">En venta</span>
+                <span class="justify-center w-24 font-medium text-lg h-full items-center flex duration-300 hover:text-verdeLetra hover:cursor-pointer hover:bg-verdeClaro hover:border-b-4 hover:border-verdeLetra">Tradeo</span>
+                <span class="justify-center w-24 font-medium text-lg h-full items-center flex duration-300 hover:text-verdeLetra hover:cursor-pointer hover:bg-verdeClaro hover:border-b-4 hover:border-verdeLetra">Inventario</span>
+            </div>
+            <div class="w-3/6 flex justify-end items-center" id="toggle">
+                <div class="mt-2 mr-4 border-solid border-2 border-gris duration-300 dark:bg-negrito dark:border-none" id="button">
+                    <img id="sun" class='h-8 w-8' src="../Imagenens/Imagenes-funcionales/sol.svg" alt="">
+                    <img id="mooon" class="h-8 w-6" src="../Imagenens/Imagenes-funcionales/luna.svg" alt="">
+                </div>            
+            </div>
+        </nav>
+    </header>
+    <aside class="h-full w-full flex flex-col  justify-start items-center border-gris border-r-2" id="aside">
+        <h2 class="mt-4 text-verdeLetra font-bold text-xl">FILTROS</h2>
+        <p class="mt-4 text-base text-grisLetra">PRECIO</p>
+        <form class="flex justify-center items-center flex-col" action="">
+            <label for="precio-desde"></label>
+            <input class="outline-none mt-2 pl-3 w-48 h-10 border-gris border-2 rounded-full text-xs dark:bg-negrito dark:border-none dark:text-white" type="text" name="precio-desde" placeholder="DESDE">
+            <br>
+            <label for="precio-hasta"></label>
+            <input class="outline-none mt-3 pl-3 w-48 h-10 border-gris border-2 rounded-full text-xs dark:bg-negrito dark:border-none dark:text-white" type="text" name="precio-hasta" placeholder="HASTA">
+        </form>
+        <h2 class="mt-4 text-verdeLetra font-bold text-xl">ESTRELLAS</h2>
+       <!-- Tiene un bug con los .svg de estrella -->
+        <div class="mt-4 rounded-md border-gris border-2 flex flex-col items-center h-12 w-32">
+            <p class="text-grisLetra text-xs">clasificacion</p>
+            <div class="flex flex-row items-ceneter justify-center">
+            </div>
+        </div>
+        <h2 class="mt-6 text-xl text-verdeLetra font-bold">HASHTAG</h2>
+        <span class="px-2 text-grisLetra text-sm mt-4 border-2 border-gris rounded-md flex justify-center items-center hover:text-verdeLetra hover:border-verdeLetra hover:cursor-pointer dark:text-white">#NFT(BOEEEE)</span>
+    </aside>
+    <main class="flex flex-row flex-wrap" id="contenedor-productos">
+        <!-- Productos test de como quedaria -->
+        <div class="producto rounded-lg ml-8 mt-8 h-56 w-48 border-gris border-2" id="producto">
+            <div class="h-4/5 flex flex-col items-end justify-between mr-2">
+                <span class="text-verdeClaro font-bold">$55,5</span>
+                <div class="flex flex-row items-center">     
+                    <p class="text-verdeClaro font-bold">4,5</p>
+                    <img class="h-6 w-6 mb-1 ml-2" id="estrella" src="../Imagenens/Imagenes-funcionales/ESTRELLA.svg" alt="">
+                </div>    
+            </div>
+            <div class="h-1/5 border-t-2 border-gris flex items-center justify-center text-grisLetra">
+                <svg id="Capa_1" class="flex items-center justify-center" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 75 75">
+                    <path class="cls-1 h-10 w-10" d="M48.5,54.5l-10.3-5.8-10.3,5.8c-1.2.7-2.7-.2-2.7-1.6v-25.4h26v25.4c0,1.4-1.5,2.3-2.7,1.6Z"/>
+                  </svg>
+                <span class="dark:text-white">#hastash</span>
+                <span class="cls-1 ml-2 mr-2 dark:text-white">#sadasda</span>
+            </div>
+        </div>
+        <div class="producto rounded-lg ml-8 mt-8 h-56 w-48 border-gris border-2" id="producto">
+            <div class="h-4/5 flex flex-col items-end justify-between mr-2">
+                <span class="text-verdeClaro font-bold">$55,5</span>
+                <div class="flex flex-row items-center">     
+                    <p class="text-verdeClaro font-bold">4,5</p>
+                    <img class="h-6 w-6 mb-1 ml-2" id="estrella" src="../Imagenens/Imagenes-funcionales/ESTRELLA.svg" alt="">
+                </div>    
+            </div>
+            <div class="h-1/5 border-t-2 border-gris flex items-center justify-center text-grisLetra">
+                <svg id="Capa_1" class="flex items-center justify-center" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 75 75">
+                    <path class="cls-1 h-10 w-10" d="M48.5,54.5l-10.3-5.8-10.3,5.8c-1.2.7-2.7-.2-2.7-1.6v-25.4h26v25.4c0,1.4-1.5,2.3-2.7,1.6Z"/>
+                  </svg>
+                <span class="dark:text-white">#hastash</span>
+                <span class="cls-1 ml-2 mr-2 dark:text-white">#sadasda</span>
+            </div>
+        </div>
+        <div class="producto rounded-lg ml-8 mt-8 h-56 w-48 border-gris border-2" id="producto">
+            <div class="h-4/5 flex flex-col items-end justify-between mr-2">
+                <span class="text-verdeClaro font-bold">$55,5</span>
+                <div class="flex flex-row items-center">     
+                    <p class="text-verdeClaro font-bold">4,5</p>
+                    <img class="h-6 w-6 mb-1 ml-2" id="estrella" src="../Imagenens/Imagenes-funcionales/ESTRELLA.svg" alt="">
+                </div>    
+            </div>
+            <div class="h-1/5 border-t-2 border-gris flex items-center justify-center text-grisLetra">
+                <svg id="Capa_1" class="flex items-center justify-center" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 75 75">
+                    <path class="cls-1 h-10 w-10" d="M48.5,54.5l-10.3-5.8-10.3,5.8c-1.2.7-2.7-.2-2.7-1.6v-25.4h26v25.4c0,1.4-1.5,2.3-2.7,1.6Z"/>
+                  </svg>
+                <span class="dark:text-white">#hastash</span>
+                <span class="cls-1 ml-2 mr-2 dark:text-white">#sadasda</span>
+            </div>
+        </div>
+        <div class="producto rounded-lg ml-8 mt-8 h-56 w-48 border-gris border-2" id="producto">
+            <div class="h-4/5 flex flex-col items-end justify-between mr-2">
+                <span class="text-verdeClaro font-bold">$55,5</span>
+                <div class="flex flex-row items-center">     
+                    <p class="text-verdeClaro font-bold">4,5</p>
+                    <img class="h-6 w-6 mb-1 ml-2" id="estrella" src="../Imagenens/Imagenes-funcionales/ESTRELLA.svg" alt="">
+                </div>    
+            </div>
+            <div class="h-1/5 border-t-2 border-gris flex items-center justify-center text-grisLetra">
+                <svg id="Capa_1" class="flex items-center justify-center" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 75 75">
+                    <path class="cls-1 h-10 w-10" d="M48.5,54.5l-10.3-5.8-10.3,5.8c-1.2.7-2.7-.2-2.7-1.6v-25.4h26v25.4c0,1.4-1.5,2.3-2.7,1.6Z"/>
+                  </svg>
+                <span class="dark:text-white">#hastash</span>
+                <span class="cls-1 ml-2 mr-2 dark:text-white">#sadasda</span>
+            </div>
+        </div>
+    </main>
+    <script src="../Js/login.js"></script>
+</body>
+</html>
