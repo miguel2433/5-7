@@ -3,8 +3,31 @@
     stroke: #707070;
     stroke-width: 2px;
   }
-  .cls-1:hover{
+.cls-1:hover{
     fill: #668D76;
     cursor: pointer;
     stroke:#668D76
-  }
+}
+
+.perfil{
+  stroke: #707070;
+  stroke-width: 4px;
+  fill: white;
+}
+
+.dark .perfil{
+  fill:#333548;
+  stroke-width: 0px;
+}
+
+#perfil .cls-2{
+  stroke-width: 4px;
+  stroke: #707070;
+  fill: white;
+}
+
+.dark #perfil .cls-2{
+  fill: #333548;
+  stroke-width: 24px;
+  stroke:#1a1520;
+}

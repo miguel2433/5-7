@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/estilos.css">
+    <link rel="stylesheet" href="../Css/mode.css">
+    <link rel="stylesheet" href="../Css/svg.css">
+    <title>Document</title>
+</head>
+<body class="dark:bg-negro h-screen w-full grid grid-cols-[40%_1fr] grid-rows-[auto_1fr]">
+    <header class="h-auto col-span-2" id="header">
+        <nav class="border-b-gris border-b-2 h-auto dark:bg-negro text-grisLetra flex dark:border-b-white dark:border-b-2">
+            <div class="h-16 w-3/6 flex items-center">
+                <form action="/search">
+                    <input class="w-25 border-2 border-gris rounded-full h-8 m-3 outline-none p-2 dark:border-none dark:bg-negrito" type="text" name="query" placeholder="Buscar...">
+                </form>
+                <span class="justify-center w-24 ml-8 font-medium text-lg h-full items-center flex duration-300 hover:text-verdeLetra hover:cursor-pointer hover:bg-verdeClaro hover:border-b-4 hover:border-verdeLetra">En venta</span>
+                <span class="justify-center w-24 font-medium text-lg h-full items-center flex duration-300 hover:text-verdeLetra hover:cursor-pointer hover:bg-verdeClaro hover:border-b-4 hover:border-verdeLetra">Tradeo</span>
+                <span class="justify-center w-24 font-medium text-lg h-full items-center flex duration-300 hover:text-verdeLetra hover:cursor-pointer hover:bg-verdeClaro hover:border-b-4 hover:border-verdeLetra">Inventario</span>
+            </div>
+            <div class="w-3/6 flex justify-end items-center" id="toggle">
+                <div class="mt-2 mr-4 border-solid border-2 border-gris duration-300 dark:bg-negrito dark:border-none" id="button">
+                    <img id="sun" class='h-8 w-8' src="../Imagenens/Imagenes-funcionales/sol.svg" alt="">
+                    <img id="mooon" class="h-8 w-6" src="../Imagenens/Imagenes-funcionales/luna.svg" alt="">
+                </div>            
+            </div>
+        </nav>
+    </header>
+    <!--Comienzo del perfil del usuario -->
+    <main class="border-r-2 border-gris px-4 h-full flex flex-col items-center text-center">
+        <div class="mt-4 flex flex-row">
+            <svg class="h-44 w-44" id="perfil" data-name="perfil 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 566.9 566.9">
+                <circle class="perfil" cx="283.5" cy="283.5" r="283.5"/>
+                <path class="cls-2" d="M507.8,452.5s-39.3-119.1-224.4-119.1-216.3,130-216.3,130"/>
+                <circle class="cls-2" cx="287.5" cy="253.7" r="124.6"/>
+            </svg>
+            <div class="text-left ml-4 flex justify-center flex-col">
+                <h2 class="dark:text-white text-grisLetra font-bold text-xl">Nombre de usuario</h2>
+                <p class="dark:text-white">Nombre@gmail.com</p>
+                <h2 class="text-verdeLetra font-medium">Modificar informacion personal</h2>
+            </div>
+        </div>     
+        <h2 class="mt-4 dark:text-white text-xl text-grisLetra">Informacion que el usuario puede modificar, es su descripcion</h2>   
+        <!--seccion Comentarios-->
+        <section class="overflow-y-scroll w-5/6 h-3/6 border-2 border-gris rounded-xl mt-4 w-4/5 flex flex-col">
+            <div class="mt-2 px-4 flex justify-between">    
+                <h3 class="text-grisLetra font-medium text-xl dark:text-white">Comentarios</h3>
+                <span class="fond-sm rounded-xl px-2 text-grisLetra border-2 border-gris dark:text-white">ordernar por ></span>
+            </div>     
+            <article class="mt-4 px-4 flex flex-col">
+                <!--Comentarios de los usuarios-->
+                <div class="flex items-center justify-between" >
+                    <svg class="h-10 w-10" id="perfil" data-name="perfil 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 566.9 566.9">
+                        <circle class="perfil" cx="283.5" cy="283.5" r="283.5"/>
+                        <path class="cls-2" d="M507.8,452.5s-39.3-119.1-224.4-119.1-216.3,130-216.3,130"/>
+                        <circle class="cls-2" cx="287.5" cy="253.7" r="124.6"/>
+                    </svg>
+                    <p class="dark:text-white text-grisLetra mx-2">Comentario que dice el usuario XD</p>
+                    <img class="h-12 w-12 border-2 rounded-full " src="../Imagenens/Imagenes-funcionales/pulgar.svg" alt="">
+                </div>
+                <div class="flex items-center justify-between" >
+                    <svg class="h-10 w-10" id="perfil" data-name="perfil 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 566.9 566.9">
+                        <circle class="perfil" cx="283.5" cy="283.5" r="283.5"/>
+                        <path class="cls-2" d="M507.8,452.5s-39.3-119.1-224.4-119.1-216.3,130-216.3,130"/>
+                        <circle class="cls-2" cx="287.5" cy="253.7" r="124.6"/>
+                    </svg>
+                    <p class="dark:text-white text-grisLetra mx-2">Comentario que dice el usuario XD</p>
+                    <img class="h-12 w-12 border-2 rounded-full " src="../Imagenens/Imagenes-funcionales/pulgar.svg" alt="">
+                </div>
+                <div class="flex items-center justify-between" >
+                    <svg class="h-10 w-10" id="perfil" data-name="perfil 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 566.9 566.9">
+                        <circle class="perfil" cx="283.5" cy="283.5" r="283.5"/>
+                        <path class="cls-2" d="M507.8,452.5s-39.3-119.1-224.4-119.1-216.3,130-216.3,130"/>
+                        <circle class="cls-2" cx="287.5" cy="253.7" r="124.6"/>
+                    </svg>
+                    <p class="dark:text-white text-grisLetra mx-2">Comentario que dice el usuario XD</p>
+                    <img class="h-12 w-12 border-2 rounded-full " src="../Imagenens/Imagenes-funcionales/pulgar.svg" alt="">
+                </div>
+                <div class="flex items-center justify-between" >
+                    <svg class="h-10 w-10" id="perfil" data-name="perfil 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 566.9 566.9">
+                        <circle class="perfil" cx="283.5" cy="283.5" r="283.5"/>
+                        <path class="cls-2" d="M507.8,452.5s-39.3-119.1-224.4-119.1-216.3,130-216.3,130"/>
+                        <circle class="cls-2" cx="287.5" cy="253.7" r="124.6"/>
+                    </svg>
+                    <p class="dark:text-white text-grisLetra mx-2">Comentario que dice el usuario XD</p>
+                    <img class="h-12 w-12 border-2 rounded-full " src="../Imagenens/Imagenes-funcionales/pulgar.svg" alt="">
+                </div>
+                <div class="flex items-center justify-between" >
+                    <svg class="h-10 w-10" id="perfil" data-name="perfil 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 566.9 566.9">
+                        <circle class="perfil" cx="283.5" cy="283.5" r="283.5"/>
+                        <path class="cls-2" d="M507.8,452.5s-39.3-119.1-224.4-119.1-216.3,130-216.3,130"/>
+                        <circle class="cls-2" cx="287.5" cy="253.7" r="124.6"/>
+                    </svg>
+                    <p class="dark:text-white text-grisLetra mx-2">Comentario que dice el usuario XD</p>
+                    <img class="h-12 w-12 border-2 rounded-full " src="../Imagenens/Imagenes-funcionales/pulgar.svg" alt="">
+                </div>
+            </article>
+        </section>
+    </main>
+    <!--Empieza el inventario de usuario solo muestra sus productos-->
+    <section class="justify-center flex flex-row flex-wrap px-4 overflow-y-scroll">   
+        <div class="producto rounded-lg ml-8 mt-8 h-56 w-48 border-gris border-2" id="producto">
+            <div class="h-4/5 flex flex-col items-end justify-between mr-2">
+                <span class="text-verdeClaro font-bold">$55,5</span>
+                <div class="flex flex-row items-center">     
+                    <p class="text-verdeClaro font-bold">4,5</p>
+                    <img class="h-6 w-6 mb-1 ml-2" id="estrella" src="../Imagenens/Imagenes-funcionales/ESTRELLA.svg" alt="">
+                </div>    
+            </div>
+            <div class="h-1/5 border-t-2 border-gris flex items-center justify-center text-grisLetra">
+                <svg id="Capa_1" class="flex items-center justify-center" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 75 75">
+                    <path class="cls-1 h-10 w-10" d="M48.5,54.5l-10.3-5.8-10.3,5.8c-1.2.7-2.7-.2-2.7-1.6v-25.4h26v25.4c0,1.4-1.5,2.3-2.7,1.6Z"/>
+                  </svg>
+                <span class="dark:text-white">#hastash</span>
+                <span class="cls-1 ml-2 mr-2 dark:text-white">#sadasda</span>
+            </div>
+        </div>
+        <div class="producto rounded-lg ml-8 mt-8 h-56 w-48 border-gris border-2" id="producto">
+            <div class="h-4/5 flex flex-col items-end justify-between mr-2">
+                <span class="text-verdeClaro font-bold">$55,5</span>
+                <div class="flex flex-row items-center">     
+                    <p class="text-verdeClaro font-bold">4,5</p>
+                    <img class="h-6 w-6 mb-1 ml-2" id="estrella" src="../Imagenens/Imagenes-funcionales/ESTRELLA.svg" alt="">
+                </div>    
+            </div>
+            <div class="h-1/5 border-t-2 border-gris flex items-center justify-center text-grisLetra">
+                <svg id="Capa_1" class="flex items-center justify-center" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 75 75">
+                    <path class="cls-1 h-10 w-10" d="M48.5,54.5l-10.3-5.8-10.3,5.8c-1.2.7-2.7-.2-2.7-1.6v-25.4h26v25.4c0,1.4-1.5,2.3-2.7,1.6Z"/>
+                  </svg>
+                <span class="dark:text-white">#hastash</span>
+                <span class="cls-1 ml-2 mr-2 dark:text-white">#sadasda</span>
+            </div>
+        </div>
+        <div class="producto rounded-lg ml-8 mt-8 h-56 w-48 border-gris border-2" id="producto">
+            <div class="h-4/5 flex flex-col items-end justify-between mr-2">
+                <span class="text-verdeClaro font-bold">$55,5</span>
+                <div class="flex flex-row items-center">     
+                    <p class="text-verdeClaro font-bold">4,5</p>
+                    <img class="h-6 w-6 mb-1 ml-2" id="estrella" src="../Imagenens/Imagenes-funcionales/ESTRELLA.svg" alt="">
+                </div>    
+            </div>
+            <div class="h-1/5 border-t-2 border-gris flex items-center justify-center text-grisLetra">
+                <svg id="Capa_1" class="flex items-center justify-center" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 75 75">
+                    <path class="cls-1 h-10 w-10" d="M48.5,54.5l-10.3-5.8-10.3,5.8c-1.2.7-2.7-.2-2.7-1.6v-25.4h26v25.4c0,1.4-1.5,2.3-2.7,1.6Z"/>
+                  </svg>
+                <span class="dark:text-white">#hastash</span>
+                <span class="cls-1 ml-2 mr-2 dark:text-white">#sadasda</span>
+            </div>
+        </div>
+        <div class="producto rounded-lg ml-8 mt-8 h-56 w-48 border-gris border-2" id="producto">
+            <div class="h-4/5 flex flex-col items-end justify-between mr-2">
+                <span class="text-verdeClaro font-bold">$55,5</span>
+                <div class="flex flex-row items-center">     
+                    <p class="text-verdeClaro font-bold">4,5</p>
+                    <img class="h-6 w-6 mb-1 ml-2" id="estrella" src="../Imagenens/Imagenes-funcionales/ESTRELLA.svg" alt="">
+                </div>    
+            </div>
+            <div class="h-1/5 border-t-2 border-gris flex items-center justify-center text-grisLetra">
+                <svg id="Capa_1" class="flex items-center justify-center" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 75 75">
+                    <path class="cls-1 h-10 w-10" d="M48.5,54.5l-10.3-5.8-10.3,5.8c-1.2.7-2.7-.2-2.7-1.6v-25.4h26v25.4c0,1.4-1.5,2.3-2.7,1.6Z"/>
+                  </svg>
+                <span class="dark:text-white">#hastash</span>
+                <span class="cls-1 ml-2 mr-2 dark:text-white">#sadasda</span>
+            </div>
+        </div>
+        <div class="producto rounded-lg ml-8 mt-8 h-56 w-48 border-gris border-2" id="producto">
+            <div class="h-4/5 flex flex-col items-end justify-between mr-2">
+                <span class="text-verdeClaro font-bold">$55,5</span>
+                <div class="flex flex-row items-center">     
+                    <p class="text-verdeClaro font-bold">4,5</p>
+                    <img class="h-6 w-6 mb-1 ml-2" id="estrella" src="../Imagenens/Imagenes-funcionales/ESTRELLA.svg" alt="">
+                </div>    
+            </div>
+            <div class="h-1/5 border-t-2 border-gris flex items-center justify-center text-grisLetra">
+                <svg id="Capa_1" class="flex items-center justify-center" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 75 75">
+                    <path class="cls-1 h-10 w-10" d="M48.5,54.5l-10.3-5.8-10.3,5.8c-1.2.7-2.7-.2-2.7-1.6v-25.4h26v25.4c0,1.4-1.5,2.3-2.7,1.6Z"/>
+                  </svg>
+                <span class="dark:text-white">#hastash</span>
+                <span class="cls-1 ml-2 mr-2 dark:text-white">#sadasda</span>
+            </div>
+        </div>
+        <div class="producto rounded-lg ml-8 mt-8 h-56 w-48 border-gris border-2" id="producto">
+            <div class="h-4/5 flex flex-col items-end justify-between mr-2">
+                <span class="text-verdeClaro font-bold">$55,5</span>
+                <div class="flex flex-row items-center">     
+                    <p class="text-verdeClaro font-bold">4,5</p>
+                    <img class="h-6 w-6 mb-1 ml-2" id="estrella" src="../Imagenens/Imagenes-funcionales/ESTRELLA.svg" alt="">
+                </div>    
+            </div>
+            <div class="h-1/5 border-t-2 border-gris flex items-center justify-center text-grisLetra">
+                <svg id="Capa_1" class="flex items-center justify-center" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 75 75">
+                    <path class="cls-1 h-10 w-10" d="M48.5,54.5l-10.3-5.8-10.3,5.8c-1.2.7-2.7-.2-2.7-1.6v-25.4h26v25.4c0,1.4-1.5,2.3-2.7,1.6Z"/>
+                  </svg>
+                <span class="dark:text-white">#hastash</span>
+                <span class="cls-1 ml-2 mr-2 dark:text-white">#sadasda</span>
+            </div>
+        </div>
+        <div class="producto rounded-lg ml-8 mt-8 h-56 w-48 border-gris border-2" id="producto">
+            <div class="h-4/5 flex flex-col items-end justify-between mr-2">
+                <span class="text-verdeClaro font-bold">$55,5</span>
+                <div class="flex flex-row items-center">     
+                    <p class="text-verdeClaro font-bold">4,5</p>
+                    <img class="h-6 w-6 mb-1 ml-2" id="estrella" src="../Imagenens/Imagenes-funcionales/ESTRELLA.svg" alt="">
+                </div>    
+            </div>
+            <div class="h-1/5 border-t-2 border-gris flex items-center justify-center text-grisLetra">
+                <svg id="Capa_1" class="flex items-center justify-center" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 75 75">
+                    <path class="cls-1 h-10 w-10" d="M48.5,54.5l-10.3-5.8-10.3,5.8c-1.2.7-2.7-.2-2.7-1.6v-25.4h26v25.4c0,1.4-1.5,2.3-2.7,1.6Z"/>
+                  </svg>
+                <span class="dark:text-white">#hastash</span>
+                <span class="cls-1 ml-2 mr-2 dark:text-white">#sadasda</span>
+            </div>
+        </div>  
+    </section>
+    <script src="../Js/login.js"></script>
+</body>
+</html>
