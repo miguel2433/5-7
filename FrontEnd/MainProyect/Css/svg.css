@@ -31,3 +31,37 @@
   stroke-width: 24px;
   stroke:#1a1520;
 }
+
+#Galeria .cls-1{
+  fill: #ffce00;
+}
+
+#Galeria .cls-1, .cls-2, .cls-3, .cls-4{
+  stroke-width: 0;
+}
+
+#Galeria .cls-2{
+  fill: #4b7f69;
+  stroke-width: 2px;
+  stroke: #4b7f69;
+}
+
+#Galeria .cls-3 {
+  fill: #a3e1ff;
+}
+
+#Galeria .cls-4{
+  fill: #4b7f69;
+}
+
+.dark #Galeria .cls-3{
+  fill: #1a1520;
+}
+
+.dark #Galeria .cls-1{
+  fill: white;
+}
+
+.dark #Galeria .cls-4{
+  fill: #668D76;
+}

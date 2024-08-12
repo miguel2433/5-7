@@ -667,6 +667,10 @@ video {
   height: 80%;
 }
 
+.h-44 {
+  height: 11rem;
+}
+
 .h-56 {
   height: 14rem;
 }
@@ -691,8 +695,20 @@ video {
   height: 100vh;
 }
 
-.h-44 {
-  height: 11rem;
+.h-52 {
+  height: 13rem;
+}
+
+.h-60 {
+  height: 15rem;
+}
+
+.h-64 {
+  height: 16rem;
+}
+
+.h-36 {
+  height: 9rem;
 }
 
 .w-10 {
@@ -721,6 +737,10 @@ video {
 
 .w-4\/5 {
   width: 80%;
+}
+
+.w-44 {
+  width: 11rem;
 }
 
 .w-48 {
@@ -767,8 +787,28 @@ video {
   width: 100%;
 }
 
-.w-44 {
-  width: 11rem;
+.w-56 {
+  width: 14rem;
+}
+
+.w-60 {
+  width: 15rem;
+}
+
+.w-64 {
+  width: 16rem;
+}
+
+.w-2 {
+  width: 0.5rem;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.w-4\/6 {
+  width: 66.666667%;
 }
 
 .cursor-pointer {
@@ -785,6 +825,10 @@ video {
 
 .grid-cols-\[300px_1fr\] {
   grid-template-columns: 300px 1fr;
+}
+
+.grid-cols-\[35\%_1fr\] {
+  grid-template-columns: 35% 1fr;
 }
 
 .grid-cols-\[40\%_1fr\] {
@@ -865,6 +909,10 @@ video {
   border-radius: 0.75rem;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
 .border-2 {
   border-width: 2px;
 }
@@ -895,6 +943,11 @@ video {
   border-color: rgb(212 212 212 / var(--tw-border-opacity));
 }
 
+.border-grisLetra {
+  --tw-border-opacity: 1;
+  border-color: rgb(112 112 112 / var(--tw-border-opacity));
+}
+
 .border-b-gris {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(212 212 212 / var(--tw-border-opacity));
@@ -909,28 +962,20 @@ video {
   background-color: #FFFF;
 }
 
-.fill-white {
-  fill: #FFFF;
-}
-
-.stroke-grisLetra {
-  stroke: #707070;
-}
-
-.stroke-verdeLetra {
-  stroke: #508466;
-}
-
-.stroke-2 {
-  stroke-width: 2;
-}
-
 .p-2 {
   padding: 0.5rem;
 }
 
 .p-4 {
   padding: 1rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
+}
+
+.p-12 {
+  padding: 3rem;
 }
 
 .px-2 {
@@ -951,6 +996,11 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .pl-2 {
@@ -1143,14 +1193,6 @@ video {
 .dark\:bg-negro:where(.dark, .dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(16 13 20 / var(--tw-bg-opacity));
-}
-
-.dark\:fill-negrito:where(.dark, .dark *) {
-  fill: #1A1520;
-}
-
-.dark\:stroke-white:where(.dark, .dark *) {
-  stroke: #FFFF;
 }
 
 .dark\:text-white:where(.dark, .dark *) {
